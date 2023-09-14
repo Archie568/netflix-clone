@@ -5,7 +5,7 @@ import Fourthimg from '../../public/images/fourth_section_image.png'
 
 function Secondpage() {
     return (
-        <section className=" bg-black text-white w-full" >
+        <section className=" bg-black text-white w-full pb-6" >
 
             {/* First section */}
 
