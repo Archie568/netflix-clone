@@ -1,5 +1,7 @@
 'use client'
 
+import Link from "next/link";
+
 import React, {useState, useEffect} from "react";
 import {
     Accordion,
@@ -10,8 +12,12 @@ import {data} from './accordiondata'
 
 function Faq () {
         const [open, setOpen] = useState(0);
+        const [iconOpen, setIconOpen] = useState(false)
         const [faq, setFaq] = useState([])
-        const handleOpen = (value) => setOpen(open === value ? 0 : value);
+        const handleOpen = (value) => {
+            setOpen(open === value ? 0 : value);
+            setIconOpen(!iconOpen);
+        }
         useEffect(()=>{
             setFaq(data)
             console.log(faq)
@@ -32,7 +38,7 @@ function Faq () {
                                     <div className=" flex justify-between w-full" >
                                         <span className="" >{info.question}</span>
                                         {
-                                            open ? <span>
+                                            iconOpen ? <span>
                                             <svg 
                                                 className="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
                                                 <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
@@ -55,6 +61,15 @@ function Faq () {
                         </div>
                     ))
                 }
+            </div>
+            <div className="flex flex-col justify-center items-center pt-10 pb-20" >
+                <p className=" text-lg pb-4" >
+                    Ready to watch? Enter your email to create or restart your membership.
+                </p>
+                <div className=" flex justify-center" >
+                    <input className='bg-gray-900 w-40 md:w-60 lg:w-72 opacity-80 border rounded border-gray-500 mr-1 py-3 px-2' type="text" placeholder=" Email address" />
+                    <Link className=' bg-red-900 text-sm rounded-sm py-4 md:px-5 lg:text-2xl lg:py-3' href='/' >Get Started</Link>
+                </div>
             </div>
         </section>
     )

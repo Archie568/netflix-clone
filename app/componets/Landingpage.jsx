@@ -26,7 +26,7 @@ export default function Landingpage() {
                     height='auto'
                     className=' z-10'
                     />
-                    <button className='bg-red-600 py-1 px-3 text-justify rounded-sm hover:bg-red-700 z-10' >
+                    <button className='bg-red-900 py-1 px-3 text-justify rounded-sm hover:bg-red-700 z-10' >
                         Sign In
                     </button>
                 </div>
@@ -48,7 +48,7 @@ export default function Landingpage() {
                         />
                     </div>
                     <div className=' ml-1' >
-                        <Link className=' bg-red-600 text-sm rounded-sm px-2 py-4 md:px-5 lg:text-2xl lg:py-3' href="/" >Get Started</Link>
+                        <Link className=' bg-red-900 text-sm rounded-sm px-2 py-4 md:px-5 lg:text-2xl lg:py-3' href="/" >Get Started</Link>
                     </div>
                 </form>
             </div>
