@@ -9,8 +9,8 @@ function Secondpage() {
 
             {/* First section */}
 
-            <div className=" flex flex-col pt-16 md:flex-row md:justify-center " >
-                <div className=" flex flex-col text-center justify-center md:text-justify md:p-10" >
+            <div className=" flex flex-col pt-16 lg:flex-row lg:justify-center " >
+                <div className=" flex flex-col text-center justify-center lg:text-justify md:p-10" >
                     <h1 className=" text-3xl font-extrabold md:text-5xl" >
                         Enjoy on your TV
                     </h1>
@@ -30,8 +30,8 @@ function Secondpage() {
 
             {/* Second Section */}
 
-            <div className=" flex flex-row-reverse justify-center pt-16  bg-black" >
-                <div className=" flex flex-col text-center justify-center md:p-10" >
+            <div className=" flex flex-col lg:flex-row-reverse justify-center pt-16  bg-black" >
+                <div className=" flex flex-col text-center lg:text-justify justify-center md:p-10" >
                     <h1 className=" text-3xl font-extrabold md:text-4xl" >
                         Download your shows to watch offline
                     </h1>
@@ -50,8 +50,8 @@ function Secondpage() {
             </div>
 
             {/* Third Section */}
-            <div className="bg-black flex flex-col text-center justify-center py-32 px-10" >
-                    <h1 className=" text-3xl font-extrabold" >
+            <div className="bg-black flex flex-col text-center justify-center py-32 px-10 lg:container lg:text-justify lg:mx-auto" >
+                    <h1 className=" text-5xl font-extrabold" >
                         Watch everywhere
                     </h1>
                     <p className=" text-lg pt-3 md:text-2xl" >
@@ -60,7 +60,7 @@ function Secondpage() {
             </div>
             {/* Fourth Section */}
 
-            <div className=" flex flex-row-reverse pt-16  bg-black" >
+            <div className=" flex flex-col lg:flex-row-reverse pt-16  bg-black" >
                 <div className=" flex flex-col text-center justify-center md:p-10 md:text-left" >
                     <h1 className="text-3xl font-extrabold md:text-5xl" >
                         Create profiles for kids
