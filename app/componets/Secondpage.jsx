@@ -61,7 +61,7 @@ function Secondpage() {
             {/* Fourth Section */}
 
             <div className=" flex flex-col lg:flex-row-reverse pt-16  bg-black" >
-                <div className=" flex flex-col text-center justify-center md:p-10 md:text-left" >
+                <div className=" flex flex-col text-center px-2 justify-center md:p-10 md:text-left" >
                     <h1 className="text-3xl font-extrabold md:text-5xl" >
                         Create profiles for kids
                     </h1>

@@ -33,15 +33,15 @@ function Faq () {
                 {
                     
                     faq.map((info)=> (
-                            <Accordion key='info.id' className="flex flex-col w-full mx-auto bg-gray-900 mb-2"  open={open === info.id}>
-                                <AccordionHeader className=" flex w-full text-white border-black hover:text-white pl-2 lg:pl-7 font-normal lg:text-2xl lg:py-7"  onClick={() => handleOpen(info.id)}>
-                                    <div className=" flex justify-between w-full" >
+                            <Accordion key='info.id' className="flex flex-col w-[20rem] sm:w-[32rem] md:w-[46rem] lg:w-[64rem] mx-auto bg-gray-900 mb-2"  open={open === info.id}>
+                                <AccordionHeader className=" flex w-full text-white border-black hover:text-white text-[1.125rem] pl-6 lg:pl-7 font-normal lg:text-2xl lg:py-7"  onClick={() => handleOpen(info.id)}>
+                                    <div className=" flex items-center justify-between w-full " >
                                         <span className="" >{info.question}</span>
                                         
                                         <CloseIcon id={info.id} iconOpen={iconOpen} />
                                     </div>
                                 </AccordionHeader>
-                                <AccordionBody className=" text-white font-normal p-7 text-2xl" >
+                                <AccordionBody className=" text-white font-normal p-7 text-[1.125rem] lg:text-2xl" >
                                     {info.answer}
                                 </AccordionBody>
                             </Accordion>
@@ -49,7 +49,7 @@ function Faq () {
                 }
             </div>
             <div className="flex flex-col lg:justify-center  lg:items-center pt-10 pb-20" >
-                <p className=" text-lg pb-4 mx-auto" >
+                <p className=" text-lg px-6 text-center pb-4 mx-auto" >
                     Ready to watch? Enter your email to create or restart your membership.
                 </p>
                 <div className=" flex flex-col lg:flex-row justify-center items-center " >
