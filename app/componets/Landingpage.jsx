@@ -17,8 +17,8 @@ export default function Landingpage() {
                 
                 </div>
             </div>
-            <div className=' absolute top-0 left-0 w-full pt-1 px-4 z-0  '>
-                <div className='flex justify-between text-white items-center lg:container lg:mx-auto ' >
+            <div className=' absolute top-0 left-0 w-full pt-1 px-4 lg:container lg:mx-auto lg:px-40 z-0  '>
+                <div className='flex justify-between text-white items-center  ' >
                     <Image
                     src={Logo}
                     alt='logo'
